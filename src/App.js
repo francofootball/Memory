@@ -1,26 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <body>
+        <form>
+          <div className="form-group">
+            <label>
+              <b>Memory</b>
+            </label>
+            <textarea
+              className="form-control"
+              rows="5"
+              placeholder="Description of the Memory"
+            />
+          </div>
+        </form>
+
+        <div className="App">
+          <div className="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" className="btn btn-success">
+              Save
+            </button>
+          </div>
+          <button type="button" className="btn btn-danger">
+            Cancel
+          </button>
+        </div>
+      </body>
     );
   }
 }
